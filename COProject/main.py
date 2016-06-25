@@ -82,7 +82,7 @@ class Patient:
         dataMean=sum(self.data)/len(self.data)
         SStot=sum((self.data-dataMean)**2)
         SSres=sum((self.data-self.fitData)**2)
-        self.R2=1-(SSres/SStot)
+        self.R2 = 1-(SSres/SStot)
         self.R2 = 1 - (SSres / SStot)
          #the R2 comparison is just the 11 data points plus 11 new ones,
          # not the 11 old and all the 100's recreated ones right?
